@@ -20,3 +20,6 @@ en nuestra Raspberry Pi.
 
 ![](foto2.PNG)
 
+## CÓDIGO ARDUINO
+// Código arduino
+
