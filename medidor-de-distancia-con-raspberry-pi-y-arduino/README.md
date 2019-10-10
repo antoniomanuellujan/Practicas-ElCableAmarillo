@@ -5,9 +5,12 @@
 Se trata de capturar los datos de la distancia a un objeto capturados por un sensor de ultrasonidos HC-SR04 conectado a una placa Arduino. Esta placa se conecta a un puerto USB de la Raspberry Py para recoger a traves de la comunicación serie los datos y generar en el escritorio un archivo .csv.
 En la siguiente captura de pantalla se ha ejecutado en la consola  el comando "tail -f registro_HCSR04.CSV para ver en tiempo real los datos registrados.
 
+
 ![](captura.png) 
 
+
 ![](Montaje.jpg) 
+
 
 ## Materiales
 
