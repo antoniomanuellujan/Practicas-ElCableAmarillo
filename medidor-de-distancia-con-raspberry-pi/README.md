@@ -30,7 +30,3 @@ while True:
 
 arduino.close()
 ```
-
-
-
-`
