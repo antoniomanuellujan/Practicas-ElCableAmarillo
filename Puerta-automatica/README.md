@@ -1,6 +1,6 @@
-# Puerta automática
+# Puerta automática para personas con movilidad reducida
 
-La práctica consiste en una una puerta cuya apertura esté automatizada,  ya que esta se va a abrir cuando un detector de ultrasonidos detecte a alguien delante del mismo a menos de una distancia prefijada. La puerta es accionada por un servomotor y un semaforo nos indica si podemos pasar (semaforo en verde) o si la puerta está a punto de cerrarse (semaforo en ambar o amarillo) o si está cerrada (semaforo en rojo).
+La práctica consiste en una una puerta cuya apertura esté automatizada,  ya que esta se va a abrir cuando un detector de ultrasonidos detecte a alguna persona con movilidad reducida delante del mismo a menos de una distancia prefijada (puede variar dependiendo de la distancia del sensor ultrasonico). La puerta es accionada por un servomotor y un semaforo nos indica si podemos pasar (semaforo en verde) o si la puerta está a punto de cerrarse (semaforo en ambar o amarillo) o si está cerrada (semaforo en rojo).
 
 ![](practica.gif)
 
