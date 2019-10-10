@@ -1,11 +1,11 @@
 #Sensor de temperatura con RaspberryPi
 
 
-![](Montaje1.jpg)
+![](Montaje_1.jpg)
 
 
 
-![](Montaje2.jpg)
+![](Montaje_2.jpg)
 
 # Código python
 
