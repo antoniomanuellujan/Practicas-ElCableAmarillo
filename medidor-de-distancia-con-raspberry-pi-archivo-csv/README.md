@@ -46,4 +46,27 @@ void loop(){
   delay(1000); 
 }
 
+## EXPORTAR A CSV (THONNY)
+
+```python
+## Programa en python
+import serial, time
+from time import strftime
+ 
+arduino = serial.Serial('/dev/ttyACM0', 9600)
+ 
+while True:
+  cadena = arduino.readline()
+  
+  if(cadena.decode() != ''):
+    cadena = str(cadena.decode())
+       
+    distancia = int(cadena)
+    if distancia > 4: # distancia mínima
+        with open("/home/pi/Desktop/distancia.csv", "a") as log:
+            log.write("Fecha {0}, Distancia {1}\n".format(strftime("%Y-%m-%d %H:%M:%S"), str(distancia)))
+    time.sleep(1)
+ 
+arduino.close()
+
 
