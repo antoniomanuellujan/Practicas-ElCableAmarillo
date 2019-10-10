@@ -45,7 +45,7 @@ void loop(){
  
   delay(1000); 
 }
-
+```
 ## EXPORTAR A CSV (THONNY)
 
 ```python
@@ -68,5 +68,8 @@ while True:
     time.sleep(1)
  
 arduino.close()
+```
 
+## TABLA DE DISTANCIAS OBTENIDA
 
+![](foto3.PNG)
