@@ -1,4 +1,4 @@
-# Medidor de distancia con Raspberry Pi con fichero .csv
+# Medidor de distancia con Arduino-Raspberry Pi generando fichero .csv
 
 ## Descripción
 
@@ -16,6 +16,8 @@ En la siguiente captura de pantalla se ha ejecutado en la consola  el comando "t
 - Sensor de ultrasonidos HC-SR04
 - 6 cables macho-macho
 - Placa protoboard
+
+## Código Arduino
 
 ```arduino
 int trig = 10;  
@@ -64,6 +66,9 @@ void loop() {
 }
 
 ```
+
+
+## Código Python
 
 ```python
 import serial, time
