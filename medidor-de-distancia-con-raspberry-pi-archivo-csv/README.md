@@ -13,4 +13,5 @@ Antes de comenzar debemos instalar el IDE de Arduino  y  Python Serial.
 en nuestra Raspberry Pi.
  
 ESQUEMA MONTAJE:
+![](esquema.png)
 
