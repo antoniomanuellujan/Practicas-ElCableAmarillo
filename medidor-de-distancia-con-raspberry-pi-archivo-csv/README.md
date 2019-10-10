@@ -1,6 +1,6 @@
 # ARDUINO Y RASPBERRY TOMA DE DATOS EN FICHERO CSV CON UN SENSOR DE ULTRASONIDOS
 
-Este tutorial lo hemos realizado con mucho cariño entre Paqui Vicente y Cristina Momblona. Espero que os guste.
+> Este tutorial lo hemos realizado con mucho cariño entre Paqui Vicente y Cristina Momblona. Espero que os guste.
 
 Vamos a conectar Raspberry Pi con Arduino para controlar un sensor de ultrasonidos, que se comuniquen entre ellos a través del puerto serie y almacenar los datos en un fichero CSV.
 
@@ -11,16 +11,15 @@ Vamos a conectar Raspberry Pi con Arduino para controlar un sensor de ultrasonid
 - Sensor de ultrasonidos
 - Cables para realizar las conexiones
 
-Antes de comenzar debemos instalar el IDE de Arduino  y  Python Serial.
-en nuestra Raspberry Pi.
+Antes de comenzar debemos instalar el IDE de Arduino y Python Serial en nuestra Raspberry Pi.
 
-## ESQUEMA MONTAJE:
+## Esquema eléctrico
 
 ![](foto1.PNG)
 
 ![](foto2.PNG)
 
-## CÓDIGO ARDUINO
+## Programación
 
 ```arduino
 // const int TrigPin = 5; 
@@ -46,7 +45,7 @@ void loop(){
   delay(1000); 
 }
 ```
-## EXPORTAR A CSV (THONNY)
+## Exportar a CSV (Thonny)
 
 ```python
 ## Programa en python
@@ -70,6 +69,6 @@ while True:
 arduino.close()
 ```
 
-## TABLA DE DISTANCIAS OBTENIDA
+## Tabla de distancias obtenidas
 
 ![](foto3.PNG)
