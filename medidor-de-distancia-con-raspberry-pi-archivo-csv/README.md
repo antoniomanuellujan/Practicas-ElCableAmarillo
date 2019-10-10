@@ -21,5 +21,29 @@ en nuestra Raspberry Pi.
 ![](foto2.PNG)
 
 ## CÓDIGO ARDUINO
-// Código arduino
+
+```arduino
+// const int TrigPin = 5; 
+const int EchoPin = 6; 
+int cm; 
+void setup(){ 
+  Serial.begin(9600); 
+  pinMode(TrigPin, OUTPUT); 
+  pinMode(EchoPin, INPUT); 
+} 
+void loop(){ 
+  digitalWrite(TrigPin, LOW); //LOW y HIGH para mandar un pulso breve al pin Trig
+  delayMicroseconds(2); 
+  digitalWrite(TrigPin, HIGH); 
+  delayMicroseconds(10); 
+  digitalWrite(TrigPin, LOW); 
+ 
+  cm = pulseIn(EchoPin, HIGH) / 58.0; //Convertimos el tiempo de eco en cm
+ 
+  String cadena = String(cm);
+  Serial.println(cadena);
+ 
+  delay(1000); 
+}
+
 
