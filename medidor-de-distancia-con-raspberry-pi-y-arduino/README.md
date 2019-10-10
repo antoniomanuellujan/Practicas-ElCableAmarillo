@@ -1,6 +1,8 @@
 # Medidor de distancia con Raspberry Pi con fichero .csv
 
-Descripción
+## Descripción
+
+Se trata de capturar los datos de la distancia a un objeto al sensor de ultrasonidos HC-SR04 registrados por una placa Arduino
 
 ![](captura.png) 
 
