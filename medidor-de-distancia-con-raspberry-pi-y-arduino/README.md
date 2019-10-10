@@ -2,7 +2,7 @@
 
 Descripción
 
-![](captura.jpg) 
+![](captura.png) 
 
 ```arduino
 
