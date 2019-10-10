@@ -5,7 +5,7 @@
 Se trata de capturar los datos de la distancia a un objeto al sensor de ultrasonidos HC-SR04 registrados por una placa Arduino
 
 ![](captura.png) 
-![](montaje.jpg) 
+![](Montaje.jpg) 
 
 ## Materiales
 
