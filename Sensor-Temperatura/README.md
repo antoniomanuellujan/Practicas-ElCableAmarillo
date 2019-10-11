@@ -6,6 +6,11 @@
 
 
 ![](Montaje_2.jpg)
+#Materiales
+RaspberryPi 3
+Sensor DS18B20
+
+Resistencias de 4,7K
 
 # Código python
 
