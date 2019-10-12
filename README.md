@@ -6,8 +6,8 @@
   <a target="_blank" href="https://travis-ci.org/ElCableAmarillo/elcableamarillo.cc">
     <img src="https://travis-ci.org/ElCableAmarillo/elcableamarillo.cc.svg?branch=master">
   </a>
-  <a target="_blank" href="https://github.com/ProgramoErgoSum/elcableamarillo.cc/blob/develop/LICENSE">
-    <img src="https://badgen.net/badge/license/MIT/orange">
+  <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">
+    <img src="https://badgen.net/badge/license/ccbysa%204.0/orange">
   </a>
 </div>
 
