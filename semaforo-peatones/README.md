@@ -40,13 +40,13 @@ R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 
 Se conecta el LED rojo al pin digital 13 y el LED de color verde al pin digital 12 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia. El zumbador se conecta debidamente polarizado al pin digital 11.
 
-![](fritzing.png)
+![](esquema-placa.png)
 
 ## Programación en mBlock
 
 Al ejecutar el código se deberán establecer los pines digitales a valores bajos, lo que se conoce como inicialización. A continuación, en el bucle principal del programa se programa la activación del pin 13 en valor a alto de manera que espere 5 segundos. Una vez transcurrido el tiempo de espera se desactiva el pin 13 y se llama a un evento encargado de hacer la programación del paso de peatones. En este evento puedes observar que se reproducirá el sonido de encendido y apagado 10 veces al estar conectado al pin digital 11.
 
-![](mblock.png)
+![](mblock-buzzer-activo.png)
 
 ## Programación en Arduino
 
