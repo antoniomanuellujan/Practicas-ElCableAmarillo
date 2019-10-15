@@ -14,5 +14,12 @@ Al tratarse del modelo de servo SG90 [(Ficha Técnica)](../control-de-servo-desd
 
 ![PRÁCTICA DE CONTROL DE SERVO DESDE WEB CON RASPBERRY PI](../control-de-servo-desde-web-con-raspberry-pi/servoweb.jpg "PRÁCTICA DE CONTROL DE SERVO DESDE WEB CON RASPBERRY PI")
 
+## Esquema eléctrico
+El servo SG90 tiene tres conexiones
+* GND 
+* 5V
+* PWM (donde por modulación del ancho de pulso se indica el ángulo a disponer en  el servo)
+
+![ESQUEMA DE CONEXIONES LA PRÁCTICA](../control-de-servo-desde-web-con-raspberry-pi/fritzing.jpg "ESQUEMA DE CONEXIONES LA PRÁCTICA")
 
 
