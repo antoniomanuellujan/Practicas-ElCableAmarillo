@@ -23,3 +23,126 @@ El servo SG90 tiene tres conexiones
 ![ESQUEMA DE CONEXIONES LA PRÁCTICA](../control-de-servo-desde-web-con-raspberry-pi/fritzing.jpg "ESQUEMA DE CONEXIONES LA PRÁCTICA")
 
 
+```pythonimport RPi.GPIO as GPIO                 # Importa libreria de manejo GPIO
+import time                             # Importa time para el manejo del tiempo en segundos.
+from flask import *                     # Importa flask para el manejo de la web
+app = Flask(__name__)
+
+servoPIN = 17                           # Conectamos servo cable PWM a Pin GPIO 17
+GPIO.setmode(GPIO.BCM)                  
+GPIO.setwarnings(False)                 # Evitar mensajes de alarma.
+GPIO.setup(servoPIN, GPIO.OUT)          # Establecemos el pin del servo como salida
+
+p = GPIO.PWM(servoPIN, 50)              # GPIO 17 PWM a 50Hz
+p.start(2.5)                            # Initialization en ángulo 0
+time.sleep(2)
+
+@app.route('/')
+def home():
+   templateData = {
+      'angulo' : 0,
+   }
+   return render_template('servo.html', **templateData)
+
+@app.route('/<angle>')
+def servo(angle):
+   p.ChangeDutyCycle(2.5+int(angle)/10)
+   templateData = {
+      'angulo' : int(angle),
+   }
+   return render_template('servo.html', **templateData)
+
+if __name__ == '__main__':
+   app.run(host='0.0.0.0', port=8000, debug=True)
+```
+
+````html
+<html>
+<head>
+   <style>
+      .btn { 
+         margin: 10px;
+         padding: 10px 20px;
+         text-align: center;
+         border: 1px solid #000;
+         background: #ccc;
+         text-decoration: none;
+         font-size: 30px;
+         line-height: 3;
+         color: #000;
+      }
+      .btn.angulo {
+         background: #ff0;
+      }
+   </style>
+</head>
+<body>
+   {% if angulo == 0 %}
+      <a class="btn angulo" href="/0">0</a>
+   {% else %}
+      <a class="btn" href="/0">0</a>
+   {% endif %}
+
+   {% if angulo == 10 %}
+      <a class="btn angulo" href="/10">10</a>
+   {% else %}
+      <a class="btn" href="/10">10</a>
+   {% endif %}
+   
+   {% if angulo == 20 %}
+      <a class="btn angulo" href="/20">20</a>
+   {% else %}
+      <a class="btn" href="/20">20</a>
+   {% endif %}
+
+   {% if angulo == 30 %}
+      <a class="btn angulo" href="/30">30</a>
+   {% else %}
+      <a class="btn" href="/30">30</a>
+   {% endif %}
+   
+   {% if angulo == 40 %}
+      <a class="btn angulo" href="/40">40</a>
+   {% else %}
+      <a class="btn" href="/40">40</a>
+   {% endif %}
+   
+   {% if angulo == 50 %}
+      <a class="btn angulo" href="/50">50</a>
+   {% else %}
+      <a class="btn" href="/50">50</a>
+   {% endif %}
+   
+   {% if angulo == 60 %}
+      <a class="btn angulo" href="/60">60</a>
+   {% else %}
+      <a class="btn" href="/60">60</a>
+   {% endif %}
+   
+   {% if angulo == 70 %}
+      <a class="btn angulo" href="/70">70</a>
+   {% else %}
+      <a class="btn" href="/70">70</a>
+   {% endif %}
+   
+   {% if angulo == 80 %}
+      <a class="btn angulo" href="/80">80</a>
+   {% else %}
+      <a class="btn" href="/80">80</a>
+   {% endif %}
+
+   {% if angulo == 90 %}
+      <a class="btn angulo" href="/90">90</a>
+   {% else %}
+      <a class="btn" href="/90">90</a>
+   {% endif %}
+   
+   {% if angulo == 100 %}
+      <a class="btn angulo" href="/100">100</a>
+   {% else %}
+      <a class="btn" href="/100">100</a>
+   {% endif %}  
+   
+</body>
+</html>
+```
