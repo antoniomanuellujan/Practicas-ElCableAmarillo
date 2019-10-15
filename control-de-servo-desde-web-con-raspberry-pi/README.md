@@ -6,7 +6,7 @@ Para el diseño se ha ralizado un entorno web sencillo, marcado por 11 botones q
 Al tratarse del modelo de servo SG90 [(Ficha Técnica)](../control-de-servo-desde-web-con-raspberry-pi/sg90_datasheet.pdf). El rango de giro va desde -90º hasta +90º (Un rango total de 180º). Por lo que cada escalón viene a correlacionarse con 18º.
 
 
-![PRÁCTICA DE CONTROL DE SERVO DESDE WEB CON RASPBERRY PI](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![PRÁCTICA DE CONTROL DE SERVO DESDE WEB CON RASPBERRY PI](../control-de-servo-desde-web-con-raspberry-pi/servoweb.jpg "PRÁCTICA DE CONTROL DE SERVO DESDE WEB CON RASPBERRY PI")
 
 
 
