@@ -50,6 +50,12 @@ Al ejecutar el código se calcula el valor del sensor analógico conectado al pi
 
 ![](mblock.png)
 
+## Programación en ArduinoBlocks
+
+Similar a la programación en mBlocks aunque en este caso se tomó como umbral el valor 100 en A0.
+
+![](arduinoblocks.png)
+
 ## Programación en Arduino
 
 En primer lugar, se configura el pin digital 13 en modo salida (OUTPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez.
