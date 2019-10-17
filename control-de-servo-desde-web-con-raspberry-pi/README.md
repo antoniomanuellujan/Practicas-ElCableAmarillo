@@ -40,6 +40,20 @@ El servo SG90 tiene tres conexiones
        #### p.ChangeDutyCycle(dc)  # where 2.5 <= dc <= 12,5 para este servo
   * Detener PWM:
        #### p.stop()
+- Pines y canales PWM en GPIO: Sólo hay 4 pines GPIO disponibles para PWM en la Raspberry Pi (atendiendo al fabricante BCM2835), y sólo 2 canales PWM (PWM0 and PWM1).
+
+|PWM GPIO      |PWM0          |PWM1          |Raspberry Pi 3 GPIO Pin |
+| ------------ | ------------ | ------------ | ---------------------- | 
+|GPIO 12	     |Alt Fun 0	|–             |Pin #32                 |
+|GPIO 13	     |–             |Alt Fun 0	|Pin #33                 |
+|GPIO 18	     |Alt Fun 5	|–	          |Pin #12                 |
+|GPIO 19	     |–	          |Alt Fun 5	|Pin #35                 |
+|GPIO 40	     |Alt Fun 0	|–	          |N/A                     |
+|GPIO 41	     |–	          |Alt Fun 0	|N/A                     |
+|GPIO 45	     |–	          |Alt Fun 0	|N/A                     |
+|GPIO 52	     |Alt Fun 1	|–	          |N/A                     |
+|GPIO 53	     |–	          |Alt Fun 1	|N/A                     |
+
 
 ## CÓDIGO PYTHON
 ```python
