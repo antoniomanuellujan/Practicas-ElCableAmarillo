@@ -22,7 +22,7 @@ El servo SG90 tiene tres conexiones
 
 ![ESQUEMA DE CONEXIONES LA PRÁCTICA](../control-de-servo-desde-web-con-raspberry-pi/fritzing.jpg "ESQUEMA DE CONEXIONES LA PRÁCTICA")
 
-
+`PYTHON`
 ```python
 import RPi.GPIO as GPIO                 # Importa libreria de manejo GPIO
 import time                             # Importa time para el manejo del tiempo en segundos.
@@ -56,7 +56,7 @@ def servo(angle):
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=8000, debug=True)
 ```
-
+`HTML`
 ```HTML
 <html>
 <head>
