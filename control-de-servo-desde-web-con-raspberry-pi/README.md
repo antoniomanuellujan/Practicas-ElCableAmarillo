@@ -55,6 +55,9 @@ El servo SG90 tiene tres conexiones
 |GPIO 53	     |–	          |Alt Fun 1	|N/A                     |
 
 
+## PINES GPIO EN RASPBERRY PI 3
+![GPIO EN RASPBERRY PI 3](../control-de-servo-desde-web-con-raspberry-pi/GPIO-RASPBERRY-PI-3.png "GPIO EN RASPBERRY PI 3")
+
 ## CÓDIGO PYTHON
 ```python
 import RPi.GPIO as GPIO                 # Importa libreria de manejo GPIO
