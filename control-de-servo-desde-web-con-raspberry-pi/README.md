@@ -24,6 +24,23 @@ El servo SG90 tiene tres conexiones
 
 ![ESQUEMA DE CONEXIONES LA PRÁCTICA](../control-de-servo-desde-web-con-raspberry-pi/fritzing.jpg "ESQUEMA DE CONEXIONES LA PRÁCTICA")
 
+## INDICACIONES PREVIAS
+- Antes de instalar cualquier software es conveniente actualizar la Raspberry Pi. (Puede ser necesario que esta tenga fecha y hora correcta para actualizarse)
+     #### pi@raspberrypi:~ $ sudo apt update
+- Una vez actualizada instalamos el servidor de Flask para Python 3.
+     #### pi@raspberrypi:~ $ sudo apt install python3-flask
+- Usar PWM con RPi.GPIO
+  * Creación de la instancia PWM inicial
+       #### p = GPIO.PWM(canal, frecuencia)
+  * Iniciar PWM:
+       #### p.start(dc)   # siendo dc el valor de ciclo (2.5(-90º) <= dc <= 12.5(90º)) para este servo.
+  * Cambión del al frecuencia de trabajo
+       #### p.ChangeFrequency(freq)   # where freq is the new frequency in Hz
+  * Cambiod el tiempo de ciclo PWM:
+       #### p.ChangeDutyCycle(dc)  # where 2.5 <= dc <= 12,5 para este servo
+  * Detener PWM:
+       #### p.stop()
+
 ## CÓDIGO PYTHON
 ```python
 import RPi.GPIO as GPIO                 # Importa libreria de manejo GPIO
