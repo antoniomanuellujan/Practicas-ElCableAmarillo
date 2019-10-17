@@ -20,9 +20,11 @@ El servo SG90 tiene tres conexiones
 * 5V
 * PWM (donde por modulación del ancho de pulso se indica el ángulo a disponer en  el servo)
 
+
+
 ![ESQUEMA DE CONEXIONES LA PRÁCTICA](../control-de-servo-desde-web-con-raspberry-pi/fritzing.jpg "ESQUEMA DE CONEXIONES LA PRÁCTICA")
 
-`PYTHON`
+## CÓDIGO PYTHON
 ```python
 import RPi.GPIO as GPIO                 # Importa libreria de manejo GPIO
 import time                             # Importa time para el manejo del tiempo en segundos.
@@ -38,25 +40,25 @@ p = GPIO.PWM(servoPIN, 50)              # GPIO 17 PWM a 50Hz
 p.start(2.5)                            # Initialization en ángulo 0
 time.sleep(2)
 
-@app.route('/')
+@app.route('/')                        
 def home():
-   templateData = {
+   templateData = {                     # Manda al template el valor de águlo igual a 0
       'angulo' : 0,
    }
-   return render_template('servo.html', **templateData)
+   return render_template('servo.html', **templateData)     # Renderiza el template html con ese valor
 
 @app.route('/<angle>')
 def servo(angle):
-   p.ChangeDutyCycle(2.5+int(angle)/10)
-   templateData = {
+   p.ChangeDutyCycle(2.5+int(angle)/10)                     # Da el nuevo valor para el servo en PWM
+   templateData = {                                         # Mánda al template el nuevo valor del ángulo
       'angulo' : int(angle),
    }
-   return render_template('servo.html', **templateData)
+   return render_template('servo.html', **templateData)     # Renderíza el template html con el nuevo valor
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=8000, debug=True)
 ```
-`HTML`
+## CÓDIGO HTML
 ```HTML
 <html>
 <head>
