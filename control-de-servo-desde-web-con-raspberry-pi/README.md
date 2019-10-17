@@ -149,3 +149,6 @@ if __name__ == '__main__':
 </body>
 </html>
 ```
+
+## VIDEO MUESTRA DE LA ACCIÓN DEL SERVO
+![MUESTRA DE LA ACCIÓN DEL SERVO](../control-de-servo-desde-web-con-raspberry-pi/servoweb.gif "MUESTRA DE LA ACCIÓN DEL SERVO")
