@@ -17,7 +17,7 @@ https://www.luisllamas.es/medir-sonido-con-arduino-y-microfono-amplificado-max98
 
 ![](Arduino_Raspberry.jpg)
 ![](Arduino_RGB_KY037.jpg)
-![](Medidor_de_sonido.gif)
+![](Medidor_sonido.gif)
 
 
 
