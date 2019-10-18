@@ -2,29 +2,31 @@
 
 El objetivo de esta práctica es diseñar un control de un servo vía web, a través de internet por medio de una raspberry pi (en nuestro caso versión 3+). Se trata de un concepto similar al que ser realiza en domótica o IoT. 
 
+![](servoweb.gif)
+
 ## Materiales
+
 * Raspberry pi.
 * Servo SG90.
 * Protoboard.
 * Cables de conexionado.
 
 Para el diseño se ha ralizado un entorno web sencillo, marcado por 11 botones que van desde el 0% al 100% de las posibilidades del servo. 
-Al tratarse del modelo de servo SG90 [(Ficha Técnica)](../control-de-servo-desde-web-con-raspberry-pi/sg90_datasheet.pdf). El rango de giro va desde -90º hasta +90º (Un rango total de 180º). Por lo que cada escalón viene a correlacionarse con 18º.
+Al tratarse del modelo de servo SG90 [(Ficha Técnica)](sg90_datasheet.pdf). El rango de giro va desde -90º hasta +90º (Un rango total de 180º). Por lo que cada escalón viene a correlacionarse con 18º.
 
-
-![PRÁCTICA DE CONTROL DE SERVO DESDE WEB CON RASPBERRY PI](../control-de-servo-desde-web-con-raspberry-pi/servoweb.jpg "PRÁCTICA DE CONTROL DE SERVO DESDE WEB CON RASPBERRY PI")
+![](servoweb.jpg)
 
 ## Esquema eléctrico
+
 El servo SG90 tiene tres conexiones
 * GND 
 * 5V
 * PWM (donde por modulación del ancho de pulso se indica el ángulo a disponer en  el servo)
 
-
-
-![ESQUEMA DE CONEXIONES LA PRÁCTICA](../control-de-servo-desde-web-con-raspberry-pi/fritzing.jpg "ESQUEMA DE CONEXIONES LA PRÁCTICA")
+![](fritzing.jpg)
 
 ## INDICACIONES PREVIAS
+
 - Antes de instalar cualquier software es conveniente actualizar la Raspberry Pi. (Puede ser necesario que esta tenga fecha y hora correcta para actualizarse)
      #### pi@raspberrypi:~ $ sudo apt update
 - Una vez actualizada instalamos el servidor de Flask para Python 3.
@@ -56,9 +58,11 @@ El servo SG90 tiene tres conexiones
 
 
 ## PINES GPIO EN RASPBERRY PI 3
-![GPIO EN RASPBERRY PI 3](../control-de-servo-desde-web-con-raspberry-pi/GPIO-RASPBERRY-PI-3.png "GPIO EN RASPBERRY PI 3")
+
+![](GPIO-RASPBERRY-PI-3.png)
 
 ## CÓDIGO PYTHON
+
 ```python
 import RPi.GPIO as GPIO                 # Importa libreria de manejo GPIO
 import time                             # Importa time para el manejo del tiempo en segundos.
@@ -92,7 +96,9 @@ def servo(angle):
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=8000, debug=True)
 ```
+
 ## CÓDIGO HTML
+
 ```HTML
 <html>
 <head>
@@ -183,6 +189,3 @@ if __name__ == '__main__':
 </body>
 </html>
 ```
-
-## VIDEO MUESTRA DE LA ACCIÓN DEL SERVO
-![MUESTRA DE LA ACCIÓN DEL SERVO](../control-de-servo-desde-web-con-raspberry-pi/servoweb.gif "MUESTRA DE LA ACCIÓN DEL SERVO")
