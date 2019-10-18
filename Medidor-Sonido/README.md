@@ -6,11 +6,20 @@ Se podrá acceder a la información remotamente utilizando el escritorio virtual
 La mayor dificultad ha sido poder hacer una lectura correcta de la entrada analógica. El micrófono utilizado KY-037 ofrece una señal analógica que no se corresponde con las variaciones del volumen del ruido. En la siguiente dirección web se indica como se soluciona este problema:
 https://www.luisllamas.es/medir-sonido-con-arduino-y-microfono-amplificado-max9812/
 
+## Materiales
+
+- 1 Placa de Arduino
+- 1 Placa Raspberry Pi
+- Micrófono KY-037
+- 1 Placa con RGB
 
 
-![](Arduino_RGB_KY037.jpg)
+
 ![](Arduino_Raspberry.jpg)
-![](Medidor-de-sonido.mp4)
+![](Arduino_RGB_KY037.jpg)
+![](Medidor de sonido.gif)
+
+
 
 ```arduino
 // Código Arduino
