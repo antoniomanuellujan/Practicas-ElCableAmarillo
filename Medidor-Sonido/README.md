@@ -20,7 +20,7 @@ https://www.luisllamas.es/medir-sonido-con-arduino-y-microfono-amplificado-max98
 
 En el siguiente GIF se puede visualizar el funcionamiento pero a no tener audio no se puede apreciar los cambios de color del RGB con en nivel sonoro. En el siguiente enlace pueden ver el video con audio.
 
-[VER VIDEO](full-URL-of-wiki-page)
+[VER VIDEO](https://github.com/pepegarcia125/Practicas/blob/master/Medidor-Sonido/Medidor-de-sonido.mp4)
 ![](Medidor_sonido.gif)
 
 En la siguiente imagen tenemos un captura de la tabla de datos obtenida con el programa en Python en la Raspberry Pi y con la ayuda de la hoja de cálculo se ha creado una gráfica.
