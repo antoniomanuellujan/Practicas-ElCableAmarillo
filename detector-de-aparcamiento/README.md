@@ -29,11 +29,11 @@ Teniendo en cuenta las características técnicas de los diodos led que utilizam
 
 Fijándonos en los pines del sensor de ultrasonidos, se conecta el pin Vcc al pin 5V de la placa de arduino, el GND al GND de la placa de arduino, y los pines triger y echo a los pines 12 y 11 respectivamente. Por otro lado se conecta el zumbador al pin digital 13 de la placa de arduino.
 
-![](fritzing.png)Entrega mañana
-Entrega mañana
-## Programación en Entrega mañanamBlock
-Entrega mañana
-Al ejecutar el códiEntrega mañanago se deberá detectar la distancia mediante el bloque que devuelve la disEntrega mañanatancia en centímetros y almacenarla en una variable. De esta forma en caso Entrega mañanade estar a más de 30 centímetros el zumbador permanecerá desactivado. En casEntrega mañanao de estar a menos 10 centímetros se activará de forma fija, y si se encueEntrega mañanantra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.
+![](fritzing.png)
+
+## Programación en mBlock
+
+Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros y almacenarla en una variable. De esta forma en caso de estar a más de 30 centímetros el zumbador permanecerá desactivado. En caso de estar a menos 10 centímetros se activará de forma fija, y si se encuentra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.
 
 ![](mblock.png)
 
