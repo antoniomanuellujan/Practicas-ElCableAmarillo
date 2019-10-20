@@ -8,7 +8,7 @@ La función de la Raspberry Pi es comunicarse con la tarjeta arduino y generar u
 
 Se podrá acceder a la información remotamente utilizando el escritorio virtual del al Raspberry Py.
 
-La mayor dificultad ha sido poder hacer una lectura correcta de la entrada analógica. El micrófono utilizado KY-037 ofrece una señal analógica que no se corresponde con las variaciones del volumen del ruido. En la siguiente dirección web se indica como se soluciona este problema `https://www.luisllamas.es/medir-sonido-con-arduino-y-microfono-amplificado-max9812/`
+La mayor dificultad ha sido poder hacer una lectura correcta de la entrada analógica. El micrófono utilizado KY-037 ofrece una señal analógica que no se corresponde con las variaciones del volumen del ruido. En esta [dirección web](https://www.luisllamas.es/medir-sonido-con-arduino-y-microfono-amplificado-max9812/) se indica como se soluciona este problema.
 
 ## Materiales
 
