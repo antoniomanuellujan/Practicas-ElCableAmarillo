@@ -46,3 +46,10 @@ Correspondencia pines LCD - Arduino
 ```arduino
 
 ```
+
+## Fuentes
+
+- https://www.youtube.com/watch?v=I5-gq7J7lM4
+- https://create.arduino.cc/projecthub/Techinc1510/hc-sro4-distance-measurer-with-lcd-1602-f94579
+
+
