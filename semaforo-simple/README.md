@@ -42,6 +42,10 @@ Al ejecutar el código se deberán establecer los pines digitales a un valor baj
 
 ![](mblock.png)
 
+## Programación en ArduinoBlock
+
+![](arduinoblock.png)
+
 ## Programación en Arduino
 
 En primer lugar, se configuran los pines digitales 11, 12 y 13 en modo salida (OUTPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez. Además, se ha creado la inicialización de los pines a un valor bajo (LOW).
