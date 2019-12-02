@@ -42,6 +42,11 @@ Al ejecutar el código se encenderán los LEDs en orden. Para ello se ha creado 
 
 ![](mblock.png)
 
+## Programación en ArduinoBlock
+
+
+![](arduinoblock.png)
+
 ## Programación en Arduino
 
 Para la programación en Arduino IDE se ha utilizado una array que contiene los pines que se van a utilizar (desde el 13 hasta el 8).
