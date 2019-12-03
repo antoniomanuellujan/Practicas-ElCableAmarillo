@@ -43,6 +43,11 @@ Al ejecutar el código se deberá detectar en todo momento si se ha pulsado el p
 
 ![](mblock.png)
 
+## Programación en ArduinoBlock
+
+
+![](arduinoblock.png)
+
 ## Programación en Arduino
 
 En primer lugar, se configura el pin digitales 13 en modo salida (OUTPUT) y el pin digital 2 en modo entrada (INPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez.
