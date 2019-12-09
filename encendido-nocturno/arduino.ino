@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-  if (analogRead(0) > 150) {
+  if (analogRead(0) < 150) {
     digitalWrite(13, HIGH);
   }
   else {
