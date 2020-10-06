@@ -8,8 +8,9 @@ El objetivo de esta práctica es encender un LED utilizando un simple pulsador, 
 
 - 1 Arduino UNO
 - 1 Protoboard
-- 4 Latiguillos
+- De 4 a 7 Latiguillos
 - 1 LED
+- 1 Pulsador
 - 1 Resistencia de 220Ω (rojo-rojo-marrón)
 - 1 Resistencia de 10KΩ (marrón-negro-naranja)
 
