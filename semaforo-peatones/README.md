@@ -42,6 +42,10 @@ Se conecta el LED rojo al pin digital 13 y el LED de color verde al pin digital 
 
 ![](esquema-placa.png)
 
+## Programación en ArduinoBlock
+
+![](arduinoblock.png)
+
 ## Programación en mBlock
 
 Al ejecutar el código se deberán establecer los pines digitales a valores bajos, lo que se conoce como inicialización. A continuación, en el bucle principal del programa se programa la activación del pin 13 en valor a alto de manera que espere 5 segundos. Una vez transcurrido el tiempo de espera se desactiva el pin 13 y se llama a un evento encargado de hacer la programación del paso de peatones. En este evento puedes observar que se reproducirá el sonido de encendido y apagado 10 veces al estar conectado al pin digital 11.
