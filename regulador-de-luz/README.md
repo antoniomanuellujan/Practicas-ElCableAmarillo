@@ -44,6 +44,11 @@ Por un lado se conectan los LEDs a los pines 9, 6 y 5 de la placa de arduino (ut
 
 ![](fritzing.png)
 
+
+## Programación en ArduinoBlock
+
+![](arduinoblock.png)
+
 ## Programación en mBlock
 
 Al ejecutar el código se calcula el valor analógico del potenciómetro y se almacena en una variable. A continuación se interpola el valor obtenido en la entrada analógica a través del potenciómetro (o-1023) con el valor de salida analógica (0-255). Todos los LEDs se encenderán con la misma intensidad fijada en la variable.

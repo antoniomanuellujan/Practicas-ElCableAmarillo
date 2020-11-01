@@ -7,7 +7,7 @@ El objetivo de esta práctica es medir la distancia entre objetos simulando el d
 ## Materiales
 
 - 1 Arduino UNO
-- 1 ProtoboardEntrega mañana
+- 1 Protoboard
 - 6 Latiguillos
 - 1 Ultrasonidos
 - 1 Zumbador
