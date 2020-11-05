@@ -31,6 +31,10 @@ Fijándonos en los pines del sensor de ultrasonidos, se conecta el pin Vcc al pi
 
 ![](fritzing.png)
 
+## Programación en Arduinoblock
+
+![](arduinoblock.png)
+
 ## Programación en mBlock
 
 Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros y almacenarla en una variable. De esta forma en caso de estar a más de 30 centímetros el zumbador permanecerá desactivado. En caso de estar a menos 10 centímetros se activará de forma fija, y si se encuentra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.
