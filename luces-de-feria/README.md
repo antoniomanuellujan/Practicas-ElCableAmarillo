@@ -16,7 +16,7 @@ En esta práctica se hacen varios efectos de encendido de nueve LEDs. Utilizando
 
 Cuando conectamos un componente electrónico a una placa de Arduino, se ejerce sobre él una diferencia de potencial de 5V en ámbos extremos, es decir, si conectamos el Led a una placa de Arduino, estará recibiendo una tensión de 5V, que es la tensión operativa que ejerce Arduino en sus pines.
 
-![](fritzing.png)
+![](luces_feria.png)
 
 ## Programación en Arduino
 
