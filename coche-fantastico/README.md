@@ -35,6 +35,7 @@ R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 Se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
 ![](fritzing.png)
+![](fritzing2.png)
 
 ## Programación en mBlock
 
