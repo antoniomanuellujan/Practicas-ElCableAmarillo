@@ -37,6 +37,7 @@ R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 Por un lado se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). Por otro lado, se conecta el pulsador al pin digital 2 de la placa de arduino (utilizando la resistencia en modo Pull-Down).
 
 ![](fritzing.png)
+![](fritzing2.png)
 
 ## Programación en mBlock
 
