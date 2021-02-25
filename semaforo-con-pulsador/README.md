@@ -19,10 +19,13 @@ Se han conectado en paralelo los 5 leds a través de una resistencia cada uno y 
 
 ![](fritzing.png)
 
-## Programación en mBlock
+## Programación en ArduinoBlock
 
-Se han creado dos variables para poder evidenciar dos estados 0 o 1, 
--	Variable pulsado: 1 para cuando pulsa el peatón
--	Variable esperaverde: 1 indicando cuando está verde para los peatones y rojo para los coches.
+Se han creado dos funciones:
+ 
+-	cocherojo: ejecuta instrucciones para parar coches y dejar pasar peatones.
+-	cocheverde: ejecuta situación "normal", es decir, pasan coches y no peatones.
 
-![](mblock.png)
+El bucle comprueba si el pulsador está pulsado o no para ir a función cocherojo o cocheverde.
+
+![](arduinoblocks.png)
