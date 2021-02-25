@@ -17,7 +17,7 @@ El proyecto consiste en un cruce de semáforos, uno de vehículos y otro de peat
 
 Se han conectado en paralelo los 5 leds a través de una resistencia cada uno y el pulsador. Los Leds cada uno a una entrada digital del arduino. Además se conecta el circuito al GND y al Vcc del arduino para que tenga corriente.
 
-![](fritzing.png)
+![](fritzing-v2.png)
 
 ## Programación en ArduinoBlock
 
