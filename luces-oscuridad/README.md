@@ -8,7 +8,7 @@
 
 ## Esquema eléctrico
 
-![]luces-oscuridad_bb.png
+![](luces-oscuridad_bb.png)
 
 ## Programación en ArduinoBlock
 
@@ -16,6 +16,6 @@ Se trata de generar un bucle que comprueba si por la entrada analógica A0 hay c
 
 Se explica parte del programa. FALTA POR COMPLETAR LA COMBINACIÓN DE LAS LUCES EN LA NOCHE.
 
-![]arduinoblocks.png
+![](arduinoblocks.png)
 
 ## Ayuda
